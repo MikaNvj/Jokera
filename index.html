@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackathon</title>
+    <title>Team jokera summer-code</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="./app.js"></script>
+    <link rel="shortcut icon" href="assets/5etoil.png">
 </head>
 
 <body>
@@ -25,21 +26,23 @@
         <p class="summer">SUMMER-CODE</p>
     </div>
     <div id="cont">
-        <header class="header">
+        <header class="header" id="home">
             <div class="nav">
-                <div class="logo">Jokera</div>
+                <div class="logo">
+                    <img src="assets/logoJokera.gif" width="150">
+                </div>
                 <div class="link">
                     <ul>
-                        <li><a href="#" class="activeo">Home</a></li>
+                        <li><a href="#home" class="activeo">Home</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#about">About</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">Work</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="linkphone">
@@ -52,29 +55,31 @@
             </div>
             <div class="menu" id="hu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-    
+
             </div>
         </header>
-        <div class="cont">
+        <div class="cont" id="home">
             <div class="contenair">
                 <div class="conttitre">
-                    <h1>TEAM JOKERA</h1>
+                    <h1 id="testeo">TEAM JOKERA</h1>
                     <p>Le lorem ipsum est, en imprimerie, une suite de mots sans</p>
-                    <button>About us</button>
+                    <a href="#portfolio">
+                        <button>About us</button>
+                    </a>
                 </div>
                 <div class="leftdiv"></div>
                 <div></div>
             </div>
-    
+
         </div>
-        <div class="vision">
+        <div class="vision" id="about">
             <div class="visiondiv">
-                <h1>About <span class="color">Our Team</span></h1>
+                <h1 id="titre">About <span class="color">Our Team</span></h1>
                 <p>One Team Who is in Love with the Evolution and Innovation Technlogy</p>
             </div>
             <div class="visioncard">
@@ -96,76 +101,71 @@
             </div>
         </div>
         <div>
-            <div class="aboutTeam">
+            <div class="aboutTeam" id="portfolio">
                 <div class="aboutTeamContent">
-                    <h1>Download Our CV here</h1>
+                    <h1 id="anime5">Download Our CV here</h1>
                     <div class="cvcont">
-                        <div class="rec">
-    
+                        <div class="rec" id="team">
                         </div>
                         <div class="about">
-                            
-            
                             <div class="options">
-            
-                                <div class="option" onclick="show(0,1,2)">
-                                    
+                                <div class="option active " onclick="show(0,1,2)">
                                     <div class="shadow">
-                                        
                                     </div>
                                     <div class="label">
                                         <div class="icon">
                                             <i class="fas fa-walking"></i>
                                         </div>
                                         <div class="info">
-                                            <div class="main">Lorem</div>
-                                            <div class="sub">Lorem ipsum dolor sit</div>
-                                            <Button>Download CV</Button>
+                                            <div class="main">Developpeur Front end</div>
+                                            <a target="_blank" href="https://portfolio-six-gamma-95.vercel.app/?fbclid=IwAR1DRxO_JgZkYguprPmR3PlU9FhrMUVCbqctMCNiT4zmK_8CAHqOA3A1Frw"><Button class="boutonCV">Portfolio</Button></a>
+                                            <a href="./assets/Mika Nivoarijaona CV.pdf" download class="cv"><Button class="boutonCV ">Download CV</Button></a>
                                         </div>
                                     </div>
                                 </div>
-            
+
                                 <div class="option" onclick="show(1,0,2)">
                                     <div class="shadow"></div>
                                     <div class="label">
-                                        <div class="icon">
+                                        <div class="icon1">
                                             <i class="fas fa-walking"></i>
                                         </div>
                                         <div class="info">
-                                            <div class="main">Lorem</div>
-                                            <div class="sub">Lorem ipsum dolor sit</div>
+                                            <div class="main">Developpeur Front end</div>
+
+                                            <a href="./assets/lanja.pdf" download><Button class="boutonCV">Download CV</Button></a>
                                         </div>
                                     </div>
                                 </div>
-            
+
                                 <div class="option" onclick="show(2,1,0)">
                                     <div class="shadow"></div>
                                     <div class="label">
-                                        <div class="icon">
+                                        <div class="icon2">
                                             <i class="fas fa-walking"></i>
                                         </div>
                                         <div class="info">
-                                            <div class="main">Lorem</div>
-                                            <div class="sub">Lorem ipsum dolor sit</div>
+                                            <div class="main">Developpeur Front end</div>
+
+                                            <a href="./assets/MariusCV.pdf" download><Button class="boutonCV">Download CV</Button></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
+                <hr>
             </div>
-        
+
             <!-- contact -->
-            <div class="contact">
+            <div class="contact" id="contact">
                 <div class="contactTeam">
-                    <web-particles id="tsparticles" options='{"fps_limit":60,"interactivity":{"detectsOn":"canvas","events":{"onClick":{"enable":true,"mode":"push"},"onHover":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"push":{"particles_nb":4},"repulse":{"distance":200,"duration":0.4}}},"particles":{"color":{"value":"#ffffff"},"links":{"color":"#ffffff","distance":150,"enable":true,"opacity":0.4,"width":1},"move":{"bounce":false,"direction":"none","enable":true,"outMode":"out","random":false,"speed":2,"straight":false},"number":{"density":{"enable":true,"area":800},"value":80},"opacity":{"value":0.5},"shape":{"type":"circle"},"size":{"random":true,"value":5}},"detectRetina":true}'></web-particles>
-        
                     <div class="champContact">
                         <form action="">
                             <div>
-                                <h1>Contact</h1>
+                                <h1>Contact Us</h1>
                             </div>
                             <div>
                                 <input type="text" placeholder="Name">
@@ -181,12 +181,14 @@
                             </div>
                         </form>
                     </div>
+                    <div class="jkr"></div>
                 </div>
+
             </div>
-    </div>
-    
-    
-    
+        </div>
+
+
+
         <!-- javascript -->
         <script>
             function show() {
@@ -203,6 +205,21 @@
                 option[j].classList.remove('active')
                 option[z].classList.remove('active')
             }
+            window.addEventListener('scroll', () => {
+                var titre = document.querySelector('#titre');
+                var about = document.querySelector('.about');
+                var contacte = document.querySelector('.champContact');
+                var recc = document.querySelector('.rec');
+                animation(titre, 'slideright')
+                animation(contacte, 'slideleft')
+                animation(about, 'slideright')
+                animation(recc, 'slideleft')
+            })
+            var testeo = document.querySelector('#testeo');
+
+            animation(testeo, 'fadein')
+
+
         </script>
     </div>
 </body>
